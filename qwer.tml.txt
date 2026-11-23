@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+
+<style>
+body {
+    background-color: #e6e6fa;
+    font-family: Arial;
+}
+
+h2 {
+    color: purple;
+    text-align: center;
+    background-color: #d8bfd8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
+
+fieldset {
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+legend {
+    color: purple;
+    font-weight: bold;
+}
+
+label {
+    color: #483d8b;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    border: 1px solid #9370db;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+input[type="submit"] {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+input[type="reset"]:hover {
+    background-color: #c71585;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label>Student Name:</label>
+<input type="text" name="studentname"
+placeholder="Enter your name" required>
+<br><br>
+
+<label>Email:</label>
+<input type="email" name="email"
+placeholder="Enter your email" required>
+<br><br>
+
+<label>Password:</label>
+<input type="password" name="password"
+placeholder="Enter password" required>
+<br><br>
+
+<label>Age:</label>
+<input type="number" name="age" min="18" max="30">
+<br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<br><br>
+
+</fieldset>
+
+<br>
+
+<label>Skills:</label>
+<input type="checkbox" name="skills" value="HTML"> HTML
+<input type="checkbox" name="skills" value="CSS"> CSS
+<input type="checkbox" name="skills" value="JavaScript"> JavaScript
+<br><br>
+
+<label>Department:</label>
+<select name="department">
+<option value="">Select Department</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="IT">IT</option>
+<option value="EEE">EEE</option>
+</select>
+<br><br>
+
+<label>Select a Course:</label>
+<input list="courses" name="course">
+
+<datalist id="courses">
+<option value="CSE">
+<option value="ECE">
+<option value="IT">
+<option value="EEE">
+</datalist>
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="date" name="dob">
+<br><br>
+
+<label>Address:</label>
+<textarea name="address" rows="4" cols="30"
+placeholder="Enter your address"></textarea>
+<br><br>
+
+<label>Upload Photo:</label>
+<input type="file" name="photo">
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>
